@@ -35,49 +35,7 @@
                 <p>Make sure you setup your database correct as written in the settings page.</p>
                 <p><a href="http://www.peyotedesign.ch/securelogin/settings.php">Set it up!</a><br>
                     <a href="https://github.com/elpeyotl/Secure-login-and-registration-form">Project on Github</a>
-                  <p>Login Form</p>
-
-                  <!--LoginForm-->
-
-     
-
                   
-
-                <div class="row-fluid">
-                    <div class="span4 offset3">
-
-                      <form action="secure/process_login.php" method="post" name="login_form" class="form-horizontal">
-                          <div class="control-group">
-                            <label class="control-label" for="inputEmail">Email</label>
-                            <div class="controls">
-                              <input type="text" id="email" name="email"placeholder="Email">
-                          </div>
-                      </div>
-                      <div class="control-group">
-                        <label class="control-label" for="inputPassword">Password</label>
-                        <div class="controls">
-                          <input type="password" name="password" id="password" placeholder="Password">
-                      </div>
-                  </div>
-                  <div class="control-group">
-                    <div class="controls">
-                        <button type="submit" class="btn" onclick="formhash(this.form, this.form.password);">Sign in</button>
-                            <!-- if login failed show this -->
-                            <?php if(isset($_GET['error'])) {?>
-                              <div class="alert alert-error fade in error">
-                            <button type="button" class="close" data-dismiss="alert">x</button>
-                            <strong>Ups! That wasn't correct...</strong>
-                            </div>
-                          <?php }?>   
-                    </div>
-                </div>
-            </form>
-        </div><!--/span4-->
-    </div><!--/row-fluid-->
-
-
-
-
     <!--THE REGISTRATION FORM-->
 
     <p>Registration Form</p>
